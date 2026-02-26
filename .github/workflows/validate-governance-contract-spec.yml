@@ -1,0 +1,35 @@
+name: Validate Governance Contract Spec
+
+on:
+  pull_request:
+    paths:
+      - 'contracts/**'
+      - '00-os/scripts/validate-governance-contract-spec.py'
+      - '.github/workflows/validate-governance-contract-spec.yml'
+  push:
+    branches:
+      - main
+    paths:
+      - 'contracts/**'
+      - '00-os/scripts/validate-governance-contract-spec.py'
+      - '.github/workflows/validate-governance-contract-spec.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    name: Validate Governance Contract
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Validate contract specification
+        run: |
+          python3 00-os/scripts/validate-governance-contract-spec.py
