@@ -9,6 +9,7 @@ Workflow: `.github/workflows/validate-boundary-governance.yml`
 Checks:
 - Governance repo must not contain implementation runtime/tooling paths.
 - Governance contract spec must remain structurally valid.
+- Governance ownership artifacts (`00-os/governed-repos.yml` and `.context-engineering/governance.yml`) must validate and reconcile.
 
 ## Failure Remediation
 

@@ -61,6 +61,10 @@ RULES = [
     ),
 ]
 
+ALLOWED_PATHS = {
+    ".context-engineering/governance.yml",
+}
+
 
 def list_repo_files() -> list[str]:
     files: list[str] = []
@@ -81,6 +85,8 @@ def main() -> int:
     violations: list[str] = []
 
     for file_path in files:
+        if file_path in ALLOWED_PATHS:
+            continue
         for rule_id, pattern, message, remediation in RULES:
             if fnmatch.fnmatch(file_path, pattern):
                 violations.append(

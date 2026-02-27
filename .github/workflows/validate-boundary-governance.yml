@@ -29,3 +29,7 @@ jobs:
       - name: Validate governance contract specification
         run: |
           python3 00-os/scripts/validate-governance-contract-spec.py
+
+      - name: Validate governance ownership artifacts
+        run: |
+          python3 00-os/scripts/validate-governance-ownership.py

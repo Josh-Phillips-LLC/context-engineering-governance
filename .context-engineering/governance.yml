@@ -1,0 +1,20 @@
+schema_version: "1.0"
+repository: "Josh-Phillips-LLC/context-engineering-governance"
+
+governance:
+  owner_system: "Context-Engineering-Governance"
+  owner_repo: "Josh-Phillips-LLC/context-engineering-governance"
+  state: "governed"
+  registry_ref: "00-os/governed-repos.yml"
+  policy_ref: "governance.md#repository-governance-adoption-model-ownership-states"
+
+controls:
+  profile: "governed"
+  required_reviews:
+    - "Compliance Officer"
+    - "Executive Sponsor (protected changes)"
+
+evidence:
+  adoption_issue: "https://github.com/Josh-Phillips-LLC/context-engineering-governance/issues/2"
+
+last_reviewed_utc: "2026-02-27T00:00:00Z"
