@@ -28,6 +28,7 @@
 - Anything under `00-os/`
 - Any change that affects Plane A vs Plane B boundaries
 - Protected architecture/process decisions must have an accepted ADR (or explicit Executive Sponsor-approved exception evidence) before merge
+- Emergency break-glass overrides must follow audit requirements in `00-os/protected-path-policy-map.md`
 
 ## Low-Risk Fast-Track (If Review Gate Passes)
 - New templates under `10-templates/`
