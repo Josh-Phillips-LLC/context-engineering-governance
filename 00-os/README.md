@@ -4,12 +4,14 @@
 
 This directory contains:
 - **governed-repos.yml**: Canonical source of truth for repository governance state
+- **intake-routing.md**: Canonical split issue intake and routing policy
 - **protected-path-policy-map.md**: Canonical protected governance path definitions
 - **scripts/**: Governance validation scripts (ADR, PR metadata, boundary, and ownership)
 
 ## Purpose
 
 - Maintains canonical governance ownership declarations and adoption state.
+- Defines deterministic split intake routing and protected-path policy.
 - Enforces deterministic validation of governance artifacts in CI.
 
 ## Usage

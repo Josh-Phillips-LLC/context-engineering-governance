@@ -32,6 +32,7 @@ Boundary drift is enforced by CI in:
 ## Change Management
 
 - Issue-first workflow
+- Split issue intake/routing policy (`00-os/intake-routing.md`)
 - PR review required
 - Executive Sponsor approval required for protected-path governance changes
 

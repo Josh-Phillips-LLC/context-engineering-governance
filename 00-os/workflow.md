@@ -11,7 +11,9 @@
 
 ## Required Rules
 - Every PR must map to an existing Issue.
+- Primary issue routing must follow `00-os/intake-routing.md` (`context-engineering-governance` for governance changes; `context-engineering-implementation` for execution/tooling changes).
 - Every PR must declare one primary tracked Issue in the PR description using `Closes #<ISSUE_NUMBER>` or `Refs #<ISSUE_NUMBER>`.
+- Legacy `Context-Engineering` issues may be linked only as historical references and cannot be the primary tracked issue for new split-repo PRs.
 - The primary tracked Issue must show PR linkage in GitHub Development before merge; if platform behavior prevents this, document the exception and compensating evidence in the PR.
 - `gh issue develop <ISSUE_NUMBER> --checkout` is recommended, but not the only allowed branch-linking path.
 - Issues must define objective, scope, constraints, and definition of done.

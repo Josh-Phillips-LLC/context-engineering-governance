@@ -3,6 +3,7 @@
 ## Blockers (Must Pass)
 - [ ] PR description includes required role metadata keys (Primary-Role:, Reviewed-By-Role:, Executive-Sponsor-Approval:)
 - [ ] PR description declares exactly one primary tracked issue using `Primary-Issue-Ref: Closes #<ISSUE_NUMBER>` or `Primary-Issue-Ref: Refs #<ISSUE_NUMBER>`
+- [ ] Primary tracked issue follows split intake routing policy in `00-os/intake-routing.md` (or has explicit approved routing exception evidence)
 - [ ] Development linkage requirement is satisfied: `Development-Linkage: Verified`, or `Development-Linkage: Exception` with compensating evidence
 - [ ] ADR applicability declared (`ADR-Required: Yes|No`)
 - [ ] If `ADR-Required: Yes`, PR includes `Primary-ADR` and `ADR-Status-At-Merge: Accepted|Exception`

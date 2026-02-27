@@ -50,7 +50,7 @@
 - Own the cross-role agent efficiency feedback lifecycle: intake, triage, implementation, and communication.
 - Scan role-scoped repos on a regular cadence (weekly or per-sprint) for `efficiency-opportunity` issues and agent operational feedback.
 - Triage efficiency feedback: assess severity, identify patterns, and determine cross-role vs. role-specific impact.
-- Implement high-impact improvements: create Context-Engineering issues/PRs for governance, policy, or container-level changes needed.
+- Implement high-impact improvements: create split-routed governance or implementation issues/PRs per `00-os/intake-routing.md`.
 - Communicate improvements back to agents: comment on original efficiency issues to close the feedback loop and demonstrate responsiveness.
 - Recommend process improvements to governance and role leadership based on systemic friction patterns.
 - Enforce deterministic reporting behavior across roles: when reusable friction occurs, agents must file or link an `efficiency-opportunity` issue before task handoff.

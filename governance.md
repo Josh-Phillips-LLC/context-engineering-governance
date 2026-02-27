@@ -371,7 +371,7 @@ If the local marker and central registry disagree, the central registry is autho
 
 ### Onboarding workflow (`autonomous -> transition -> governed`)
 
-1. Open governance adoption issue in `Context-Engineering` with objective, scope, constraints, and definition of done.
+1. Open governance adoption issue in `context-engineering-governance` with objective, scope, constraints, and definition of done (route using `00-os/intake-routing.md`).
 2. Add or update registry entry in `00-os/governed-repos.yml` and set target state.
 3. Commit local marker file in target repo (`.context-engineering/governance.yml`).
 4. Implement required controls for transition/governed state.
@@ -387,7 +387,7 @@ Initial rollout tracking issues (created under this policy):
 
 Required evidence:
 
-- Linked adoption issue in `Context-Engineering`
+- Linked adoption issue in `context-engineering-governance`
 - Named owner role and target window
 - Control gap list with follow-up implementation issues
 - Local governance marker added to target repo
@@ -404,7 +404,7 @@ Required evidence:
 
 ### Offboarding / de-governance workflow (`governed -> transition|autonomous`)
 
-1. Open protected de-governance issue in `Context-Engineering` with rationale, risk impact, and rollback plan.
+1. Open protected de-governance issue in `context-engineering-governance` with rationale, risk impact, and rollback plan.
 2. Require Compliance Officer review and Executive Sponsor approval.
 3. Update central registry state and local marker state in same change window.
 4. Capture explicit follow-up issue(s) for any control removals.

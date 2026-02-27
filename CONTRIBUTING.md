@@ -5,11 +5,15 @@ Thanks for helping improve Context-Engineering. Please keep changes scoped and r
 ## How to Contribute
 
 1. Open or reference an Issue that defines objective, scope, and definition of done.
-2. Create a branch linked to the primary Issue using any valid GitHub path (recommended: `gh issue develop <ISSUE_NUMBER> --checkout`).
-3. Make focused edits and avoid unrelated refactors.
-4. Open a PR that declares the primary Issue with `Closes #<ISSUE_NUMBER>` or `Refs #<ISSUE_NUMBER>` and includes required role metadata.
-5. For architecture/protected changes, include ADR linkage fields in the PR body (`ADR-Required`, `Primary-ADR`, `ADR-Status-At-Merge`, and supersession traceability when applicable).
-6. Ensure the primary Issue shows PR linkage in GitHub Development before merge (or document an explicit exception with compensating evidence in the PR).
+2. Confirm routing in `00-os/intake-routing.md`:
+   - governance/policy/control changes -> `context-engineering-governance`
+   - execution/tooling/runtime changes -> `context-engineering-implementation`
+3. For legacy `Context-Engineering` issues, create/link the split-repo issue first and use legacy issues only as historical references.
+4. Create a branch linked to the primary Issue using any valid GitHub path (recommended: `gh issue develop <ISSUE_NUMBER> --checkout`).
+5. Make focused edits and avoid unrelated refactors.
+6. Open a PR that declares the primary Issue with `Closes #<ISSUE_NUMBER>` or `Refs #<ISSUE_NUMBER>` and includes required role metadata.
+7. For architecture/protected changes, include ADR linkage fields in the PR body (`ADR-Required`, `Primary-ADR`, `ADR-Status-At-Merge`, and supersession traceability when applicable).
+8. Ensure the primary Issue shows PR linkage in GitHub Development before merge (or document an explicit exception with compensating evidence in the PR).
 
 ## Architecture Decisions (ADR)
 
@@ -64,12 +68,12 @@ The HR role owns the cross-role efficiency feedback lifecycle:
 
 1. **Scan weekly** (or per-sprint): Review `efficiency-opportunity` issues across all role-repos.
 2. **Triage**: Identify patterns, severity, and cross-role impact.
-3. **Implement**: Create Context-Engineering issues/PRs for high-impact improvements.
+3. **Implement**: Create split-routed issues/PRs for high-impact improvements using `00-os/intake-routing.md`.
 4. **Communicate**: Notify agents when feedback results in fixes (comment on the original efficiency issue).
 
 Example workflow:
 - Agent files: "Efficiency: Check PR state before posting comments" in their role repo
-- a-HRAIAS sees the pattern, determines it's agent-wide, creates a Context-Engineering issue
+- a-HRAIAS sees the pattern, determines it's agent-wide, opens a split-routed governance or implementation issue
 - Fix is implemented in agent-instructions/base.md
 - a-HRAIAS posts: "Implemented in PR #XYZ; new guidance added to base agent instructions"
 
